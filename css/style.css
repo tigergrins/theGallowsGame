@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: rgba(103, 145, 158, 0.3);
+}
+.conteiner {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 200px auto;
+    background-color: #fff;
+    font-family: Roboto;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+
+}
+
+h1 {
+    font-size: 36px;
+    padding-top: 20px;
+}
+.description {
+    font-size: 18px;
+}
+.hidden-word {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+input {
+    max-width: 20px;
+    text-transform: lowercase;
+}
+
+.counter {
+    padding-bottom: 10px;
+}
+.alphabet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 5px;
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.win p {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: green;
+    margin: 0 0;
+    margin-bottom: 20px;
+
+}
+
+.lose p {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 700;
+    color: red;
+    margin: 0 0;
+    margin-bottom: 20px;
+}
+
+.lose span {
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-restart {
+    margin-bottom: 30px;
+}
+
+.divLetter {
+    margin: 0 2px;
+}
+.divLetter:hover {
+    text-shadow: 1px 1px 10px rgb(7, 168, 173);
+}
