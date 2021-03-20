@@ -56,14 +56,20 @@ chosenLetters.forEach(chosenLetter => {
 
 // Проверка
 function checking(letter) {
-	counter--;
+	let innerCounter = 0;
 
 	for (let i = 0; i < word.length; i++) {
 		if (letter === word[i]) {
 			answerArray[i] = letter;
 			answerHTML = `<p>${answerArray.join(' ')}</p>`;
 			answer.innerHTML = answerHTML;
+		} else {
+			innerCounter++;
 		}
+	}
+
+	if (innerCounter == word.length) {
+		counter--;
 	}
 }
 
